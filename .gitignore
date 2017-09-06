@@ -1,0 +1,4 @@
+node_modules/
+.idea/
+archive.zip
+package-lock.json

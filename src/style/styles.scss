@@ -1,0 +1,164 @@
+@import './spinner.scss';
+@import url('https://fonts.googleapis.com/css?family=Faustina:400,500');
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  min-height:100%;
+}
+
+body{
+  background: aquamarine;
+  font:normal 14px faustina ,Arial;
+  padding:10px;
+
+}
+ul{
+  margin:0;
+  padding:0;
+}
+
+.search{
+  h1{
+    color:#023524;
+    margin:0 0 40px 0;
+    a{ text-decoration: none;
+      color:#023524;
+    }
+    span{
+      font-weight: normal;
+      font-size: 22px;
+
+      &.favourite{
+        color: #fffb00;
+        text-shadow: 1px 1px 1px #555;
+
+      }
+    }
+  }
+
+  .search-input{
+    input{
+      width: calc(100% - 55px);
+      border-radius: 5px  0 0  5px;
+      padding: 10px;
+      border: 1px solid #049c69;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    button{
+      background: #16c389;
+      color: white;
+      border: 1px solid #049c69;
+      border-radius: 0px 5px 5px 0px;
+      padding: 0;
+      font-size: 18px;
+      width: 50px;
+      height: 43px;
+      line-height: normal;
+      border-left: 0;
+    }
+  }
+
+  .word-meaning{
+
+
+    h2{
+      span.favourite-word{
+        color:#14e8a1;
+
+
+        &.favourite{
+          color: #fffb00;
+          text-shadow: 1px 1px 1px #555;
+
+        }
+      }
+    }
+    label{
+      padding-bottom:5px;
+      margin-top:20px;
+      font-size:16px;
+      display:block;
+      text-decoration: none;
+      border-bottom:1px solid #16c389;
+    }
+
+    div{
+      margin:5px 0 15px 0 ;
+      p{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        background: white;
+        display: inline-block;
+        clear:both;
+      }
+      span{
+        display: block;
+        clear:both;
+      }
+    }
+  }
+
+  .top-links{
+    position:fixed;
+    right:20px;
+    top:60px;
+
+    a {
+
+      margin-right:10px;
+      cursor: pointer;
+      color:#098e61;
+
+      &:hover{
+        text-decoration: underline;
+        color: #023524;
+        text-shadow: 0px 0 1px white;
+      }
+
+    }
+  }
+
+  .history-data{
+
+  }
+
+  .word-history{
+    ul{
+      li{
+        background-color: #71f1c6;
+        list-style: none;
+        transition: all 0.5s ease-in-out;
+        h2{
+          margin:0;
+          padding:5px 10px;
+          cursor:pointer;
+
+        }
+        .word-meaning{
+          padding:10px;
+          label{
+            margin-top:0;
+          }
+
+        }
+
+        &:nth-child(even){
+          background: #70e8c0
+        }
+
+      }
+    }
+
+  }
+
+  .content-container{
+
+
+  }
+
+
+}
