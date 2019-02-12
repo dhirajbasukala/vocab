@@ -2,3 +2,5 @@ node_modules/
 .idea/
 archive.zip
 package-lock.json
+dist
+.DS_Store
