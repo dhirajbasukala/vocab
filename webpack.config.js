@@ -26,16 +26,16 @@ module.exports ={
         hot:true,
         inline:true,
         host:"0.0.0.0",
-        port:8080,
+        port:3333,
         contentBase: path.resolve(__dirname, "src"),
         historyApiFallback: true,
-
+        stats: 'errors-only',
     },
     devtool: "source-map",
     module:{
         rules:[
             {
-                test: /\.js$/,
+                test: /\.js(x)?$/,
                 exclude: /node_modules/,
                 use:{
                     loader: 'babel-loader',
